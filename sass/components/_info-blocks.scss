@@ -1,0 +1,58 @@
+.info-block {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .search-form {
+    &--input {
+      position: relative;
+      width: 80%;
+
+      input {
+        all: unset;
+        background-color: $color-white;
+        font-size: .8rem;
+        padding: 1.2rem;
+        box-sizing: border-box;
+        width: 100%;
+      }
+    }
+
+    ::placeholder {
+      color: $color-grey-2;
+    }
+
+    &--submit {
+      position: absolute;
+      right: .4rem;
+      top: 0;
+      bottom: 0;
+      height: 2.3rem;
+      width: 2.3rem;
+      margin: auto;
+      cursor: pointer;
+      background-color: $color-dark-primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        height: 65%;
+        width: 65%;
+        display: inline-block;
+        background-size: cover;
+
+        &.search {
+          background-image: url("../../img/search.svg");
+        }
+      }
+    }
+  }
+}

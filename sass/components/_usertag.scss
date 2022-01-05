@@ -1,0 +1,31 @@
+.usertag {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    height: 60px;
+    width: 60px;
+
+    img{
+      border-radius: 50%;
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  &__text {
+    padding-left: 1.25rem;
+
+    &--name {
+      color: lighten($color-dark-primary, 15);
+      font-size: .85rem;
+      font-weight: 600;
+    }
+
+    &--title {
+      color: $color-grey-3;
+      font-size: .80rem;
+      font-weight: 400;
+    }
+  }
+}

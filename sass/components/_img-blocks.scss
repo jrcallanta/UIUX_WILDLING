@@ -1,0 +1,20 @@
+.img-block {
+  position: relative;
+  display: inline-block;
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
+
+.img--uncover-animate {
+  box-shadow: 0 0 0 0 lighten($color-light-primary, 10);
+  transition: all 250ms;
+
+  &:hover {
+    transform: translate(1rem, -1rem);
+    box-shadow: -2rem 2rem 0 0 rgb(236, 214, 200);
+  }
+}

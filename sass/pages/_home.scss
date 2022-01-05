@@ -1,0 +1,100 @@
+section.hero {
+  position: relative;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(to bottom right, $color-light-primary, $color-light-secondary);
+
+  .info-block {
+    &__text {
+      max-width: 21rem;
+      color: $color-dark-primary;
+    }
+  }
+}
+
+section.partners {
+  background-color: $color-light-secondary;
+  color: lighten($color-dark-primary, 20);
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: $grid-width;
+    margin: 2rem auto 1rem;
+
+    li  {
+      list-style: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: lighten($color-dark-primary, 2);
+
+      &:not(:last-child){
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
+section.about-us {
+  background-color: $color-white;
+  margin: auto;
+  justify-content: space-around;
+}
+
+section.products {
+  text-align: center;
+  margin: auto;
+  justify-content: space-around;
+}
+
+section.company-stats {
+  background-color: lighten($color-light-secondary, 5);
+
+  .col{
+    padding: 1rem 2rem;;
+
+    &:not(:last-child) {
+      border-right: .15rem solid lighten($color-dark-primary, 10);
+    }
+  }
+
+  .statistic {
+    &--value {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: .8rem;
+    }
+
+    &--label {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+  }
+}
+
+section.promo {
+  .heading--secondary {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+section.testimonials {
+  background-color: lighten($color-light-secondary, 5);
+  text-align: center;
+  padding: 5rem;
+
+  .heading--secondary {
+    font-size: 3rem;
+    max-width: calc(.45 * #{$grid-width});
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subheading {
+    max-width: calc(.45 * #{$grid-width});
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+  }
+}

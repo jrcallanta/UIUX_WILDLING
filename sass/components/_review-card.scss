@@ -1,0 +1,35 @@
+.review-card {
+  background-color: $color-white;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 23%;
+
+  text-align: left;
+
+  &__rating {
+    font-size: 1rem;
+    color: rgb(244, 132, 61);
+  }
+
+  &__text {
+    font-size: .95rem;
+    padding-bottom: 2rem;
+    margin-bottom: auto;
+  }
+
+
+  &--brighten-animate {
+    filter: brightness(98%);
+    transition: all 250ms;
+
+    * { transition: all 250ms; }
+
+    &:hover {
+      filter: brightness(100%);
+      transform: translateY(-.3rem);
+      box-shadow: 0 1.5rem 1.5rem .2rem rgba($color-black, .05);
+      p { color: lighten($color-dark-primary, 20); }
+    }
+  }
+}

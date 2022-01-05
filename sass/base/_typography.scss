@@ -1,0 +1,34 @@
+body {
+  font-family: 'Poppins';
+  color: $color-dark-primary;
+}
+
+.heading {
+  font-size: 5.2rem;
+  font-weight: 900;
+  letter-spacing: -.15rem;
+  text-align: center;
+  margin: 6rem auto 7rem;
+
+  &--secondary {
+    text-transform: lowercase;
+    font-size: 3.8rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  &--tertiary {
+    text-transform: lowercase;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  &--quadriary {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+  }
+}

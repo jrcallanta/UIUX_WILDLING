@@ -1,0 +1,78 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  margin: 1rem auto;
+  padding: 0 2rem;
+
+  .navbar__brand {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-dark-primary;
+      font-family: 'Raleway';
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-right: 2rem;
+    }
+  }
+
+  .navbar__tabs {
+    display: flex;
+    margin: auto;
+
+    li  {
+      list-style: none;
+      transition: all 250ms ease;
+
+      &:not(:last-child){
+        margin-right: 2rem;
+      }
+
+      &:hover {
+        transform: translateY(-.2rem);
+      }
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-dark-primary;
+      font-family: 'Poppins';
+      font-size: .9rem;
+      font-weight: 500;
+    }
+  }
+
+  .navbar__icons {
+    display: flex;
+    margin-left: 2rem;
+
+
+    a:not(:last-child){
+      margin-right: 1.2rem;
+    }
+
+    i {
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+
+
+
+      &.profile {
+        background-image: url("../../img/person.svg");
+      }
+      &.cart {
+        background-image: url("../../img/cart.svg");
+      }
+      &.menu {
+        background-image: url("../../img/menu.svg");
+      }
+    }
+  }
+}
