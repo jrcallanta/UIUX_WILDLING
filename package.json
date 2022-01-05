@@ -4,11 +4,22 @@
   "description": "This is frontend development practice using dribbble design (credits to AR Shakir).",
   "main": "index.js",
   "scripts": {
-    "compile:sass" : "node-sass sass/main.scss css/styles.css -w"
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w"
   },
-  "author": "",
+  "author": "Jelito S Callanta II",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.0"
-  }
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrcallanta/UIUX_WILDLING.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrcallanta/UIUX_WILDLING/issues"
+  },
+  "homepage": "https://github.com/jrcallanta/UIUX_WILDLING#readme"
 }
