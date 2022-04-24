@@ -13,4 +13,4 @@ http://ars-wildling.jelitos.com/
 
 ### DEVTOOLS USED:
 - node-sass
-- liver-server
+- live-server
